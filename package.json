@@ -1,0 +1,20 @@
+{
+  "name": "typescript-rollup-starter",
+  "version": "1.0.0",
+  "description": "A curated tools for developing typescript-based apps and libraries using rollup.js",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steveesamson/typescript-rollup-starter.git"
+  },
+  "keywords": [],
+  "author": "Steve S. Samson <stevee.samson@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steveesamson/typescript-rollup-starter/issues"
+  },
+  "homepage": "https://github.com/steveesamson/typescript-rollup-starter#readme"
+}
