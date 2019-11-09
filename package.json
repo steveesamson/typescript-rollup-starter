@@ -4,7 +4,8 @@
   "description": "A curated tools for developing typescript-based apps and libraries using rollup.js",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "",
+    "lint:fix": "prettier-eslint '**/*.ts' --write"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,16 @@
   "bugs": {
     "url": "https://github.com/steveesamson/typescript-rollup-starter/issues"
   },
-  "homepage": "https://github.com/steveesamson/typescript-rollup-starter#readme"
+  "homepage": "https://github.com/steveesamson/typescript-rollup-starter#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.6.1",
+    "@typescript-eslint/parser": "^2.6.1",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "prettier": "^1.19.1",
+    "prettier-eslint-cli": "^5.0.0",
+    "typescript": "^3.7.2"
+  }
 }
