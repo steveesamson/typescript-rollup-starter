@@ -2,10 +2,23 @@
   "name": "typescript-rollup-starter",
   "version": "1.0.0",
   "description": "A curated tools for developing typescript-based apps and libraries using rollup.js",
-  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "scripts": {
     "test": "",
-    "lint:fix": "prettier-eslint '**/*.ts' --write"
+    "prebuild": "rimraf dist",
+    "lint:fix": "prettier-eslint '**/*.ts' --write",
+    "build": "rollup -c",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint:fix",
+    "preversion": "npm run lint:fix",
+    "version": "npm run lint:fix && git add -A src",
+    "postversion": "git push && git push --tags",
+    "dev": "rollup -c --watch"
   },
   "husky": {
     "hooks": {
@@ -33,13 +46,19 @@
     "@typescript-eslint/eslint-plugin": "^2.6.1",
     "@typescript-eslint/parser": "^2.6.1",
     "eslint": "^6.6.0",
-    "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-import": "^2.18.2",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
     "prettier": "^1.19.1",
     "prettier-eslint-cli": "^5.0.0",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.26.5",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-typescript2": "^0.25.2",
     "typescript": "^3.7.2"
   }
 }
