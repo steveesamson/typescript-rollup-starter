@@ -1,7 +1,7 @@
 {
   "name": "typescript-rollup-starter",
   "version": "1.0.0",
-  "description": "A curated tools for developing typescript-based apps and libraries using rollup.js",
+  "description": "This is a boiler-plate for both library authors and application developers targetting TypeScript, rollup.js bundler and jest for tests.",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
