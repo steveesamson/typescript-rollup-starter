@@ -1,5 +1,5 @@
-import sayHello from "./lib/sayhello";
+import { default as sayHello } from "./lib/sayhello";
+import { default as App } from "./components/App";
+import { default as FancyButton } from "./components/FancyButton";
 
-const hello: string = sayHello();
-
-console.log(hello);
+export { sayHello, App, FancyButton };
