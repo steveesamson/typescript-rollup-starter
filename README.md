@@ -1,7 +1,9 @@
+[![Build Status](https://travis-ci.org/steveesamson/typescript-rollup-starter.svg?branch=master)](https://travis-ci.org/steveesamson/typescript-rollup-starter)
+[![Coverage Status](https://coveralls.io/repos/github/steveesamson/typescript-rollup-starter/badge.svg?branch=master)](https://coveralls.io/github/steveesamson/typescript-rollup-starter?branch=master)
+
 # Typescript-rollup-starter
 
 This is a boiler-plate for both library authors and application developers targetting TypeScript, rollup.js bundler and jest for tests.
-
 
 ## Prerequisite
 
@@ -23,15 +25,15 @@ For instance, when project is **`todo`**:
 
 $ git clone https://github.com/steveesamson/typescript-rollup-starter.git todo
 
-```    
+```
 
 ```cli
-    
+
 $ cd todo
 
 $ npm install
 
-```    
+```
 
 ## React.js
 
@@ -62,5 +64,4 @@ $ npm run test
 
 ```
 
-Check the scripts key in `package.json ` for the complete list of targets.
-
+Check the scripts key in `package.json` for the complete list of targets.
