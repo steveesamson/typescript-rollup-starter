@@ -1,6 +1,6 @@
 const fs = require("fs"),
-    path = require("path"),
-    pkg = require("./package.json");
+	path = require("path"),
+	pkg = require("./package.json");
 
 const name = path.basename(__dirname);
 
@@ -15,7 +15,6 @@ delete pkg.bugs;
 delete pkg.license;
 delete pkg.scripts.preinstall;
 
-
 fs.writeFile(__dirname + "/package.json", JSON.stringify(pkg, null, 4), "utf8", () => {
-    fs.unlink(__dirname + "/preproject.js", () => { });
-})
+	fs.unlink(__dirname + "/preproject.js", () => {});
+});
